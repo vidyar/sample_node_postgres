@@ -28,4 +28,6 @@ after_script:
 
 
 addons:
-    postgresql : "9.3"
+    postgresql : "9.3"2
+notifications:
+ email: vidyac.raghav@gmail.com

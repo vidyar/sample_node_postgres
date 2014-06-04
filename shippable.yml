@@ -17,7 +17,8 @@ before_script:
 
 script:
   - npm test
-
+addons:
+  postgresql: 9.3
 
 # Generate coverage report with istanbul
 after_script:

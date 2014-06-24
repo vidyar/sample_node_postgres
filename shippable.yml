@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 0.10.25
+  - 0.10
 
 # For xunit-file module to put results in shippable folder
 env:
@@ -31,3 +31,7 @@ after_script:
 
 addons:
     postgresql : "9.3"
+  
+matrix:
+  include:
+    node_js: 0.11

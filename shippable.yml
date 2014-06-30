@@ -13,6 +13,7 @@ env:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
+  - mkdir -p shippable/testsfolder
   - psql -c 'CREATE DATABASE app_test;' -U postgres
 
 
@@ -27,6 +28,10 @@ after_script:
 #  - psql -c 'create database if not exists test;' -U postgres
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --ui=bdd --reporter=xunit-file
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
+  
+before_archive:
+  - mv test.js shippable/testsfolder
+  
 after_archive:
       - echo $SHIPPABLE_ARTIFACTS_URL
     

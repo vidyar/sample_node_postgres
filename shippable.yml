@@ -13,7 +13,7 @@ env:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
-  - mkdir -p shippable/testsfolder
+  - mkdir -p shippable/src
   - psql -c 'CREATE DATABASE app_test;' -U postgres
 
 
@@ -30,7 +30,7 @@ after_script:
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
   
 before_archive:
-  - mv test.js shippable/testsfolder
+  - mv index.js shippable/src
   
 after_archive:
       - echo $SHIPPABLE_ARTIFACTS_URL

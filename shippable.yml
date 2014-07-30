@@ -5,7 +5,9 @@ node_js:
 
 # For xunit-file module to put results in shippable folder
 env:
+ global:
   - XUNIT_FILE=shippable/testresults/result.xml
+  - secure: wQyl9u4K+1eRJEPipAKaP5XeBa7VCiSqsEl/zUHlwn/fpHY/q40ixG12Rj+n8g1MrwwI0r/AgMZFEEC2y/IMnzdUYWicLnmy+mWq8TBwZdal7emJhvCpiUXjKhcCMfoU8mCwcJhudy5m7dg5WQ27+fBSgZXjBwB2KltazoMIXjqHUUhlPVRDNVvsxq+l2bftSRwy1gJi1ducW/cFZT5+IJvrMxL2xDRtfmUPPR3JknKaePJIdxEvn0yOq19SWU5y0I4VXCaDdKX9MdAyWqdf6tv/msX4ZvcSLl/itIwiFFt3PkjXVa/gXTPZ3gSQyrchPqjeEkDweAfHGTq9rhN02A==
 
 # Postgres binds to 127.0.0.1 by default and is started on boot. Default username is "postgres" with no password
 # Create a DB as part of before script to use it
@@ -20,6 +22,7 @@ before_script:
 
 script:
   - npm test
+  - echo $foo
 #addons:
  # postgresql: 9.3
 

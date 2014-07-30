@@ -21,6 +21,7 @@ before_script:
 script:
   - npm test
   - echo $foo
+  - git rev-parse --abbrev-ref HEAD
 #addons:
  # postgresql: 9.3
 

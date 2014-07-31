@@ -18,8 +18,6 @@ before_script:
   - mkdir -p shippable/src
   - psql -c 'CREATE DATABASE app_test;' -U postgres
 
-
-
 script:
   - npm test
   - echo $foo

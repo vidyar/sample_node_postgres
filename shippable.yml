@@ -2,7 +2,7 @@ language: node_js
 
 node_js:
   - 0.10
-
+build_environment: debian wheezy
 # For xunit-file module to put results in shippable folder
 env:
  global:

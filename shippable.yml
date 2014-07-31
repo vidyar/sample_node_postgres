@@ -7,8 +7,9 @@ node_js:
 env:
  global:
   - XUNIT_FILE=shippable/testresults/result.xml
-  - secure: wQyl9u4K+1eRJEPipAKaP5XeBa7VCiSqsEl/zUHlwn/fpHY/q40ixG12Rj+n8g1MrwwI0r/AgMZFEEC2y/IMnzdUYWicLnmy+mWq8TBwZdal7emJhvCpiUXjKhcCMfoU8mCwcJhudy5m7dg5WQ27+fBSgZXjBwB2KltazoMIXjqHUUhlPVRDNVvsxq+l2bftSRwy1gJi1ducW/cFZT5+IJvrMxL2xDRtfmUPPR3JknKaePJIdxEvn0yOq19SWU5y0I4VXCaDdKX9MdAyWqdf6tv/msX4ZvcSLl/itIwiFFt3PkjXVa/gXTPZ3gSQyrchPqjeEkDweAfHGTq9rhN02A==
-  - secure: Ba9NBwHO7+w6jy85QSV/H2Gt9OIt37RpsCof8fWxJdsl9g53olW+qzS0bhRlFBZlQut+eGuHdEb4o2pwE/S7+IuB0dL9WX1y1RrBB9Ma6FEFfi7pH8eXDnfT600v8vPxBG7qpOd2fD9Cy7jZO4zv1jbWMAZSLxZbet9IQq6cwWHXqixGv3pY9lfyy5RGk2nUVuKFnhQW5cpK2Zu2KDMcsiMfmzBWg6/7WD6BuMpmFqgrvwDKx4MeV9E0jHH842AxVYNkch6wTvHZ2kbO0N002Ig0S4PZk87chHCHZ5D2ftoXwTs4gxHnOf97tsVfAzsy6ydZaXl2Al0JQPGPn3yj1Q==
+  - secure: hWWUoZeVWoEcZZQsxQvuGnnIHe0Jl40PngdEko68QOquXqtHoOC/WC/yB7RT69e0copyzffh0lios+X1ysGWtKKUwAS5aDhrGymhM6b7BmWnksZ0/QgwEOPUcQEsqmWJKE5hraoGdmifhCwjCLrG+9avw3SnA1QaVbZ9TkHNsaOnz1PFH4GAZ0n8LXzVsbI+GCr5WAlWHvR9xDJ2bMChXY+ld2aHG5xdo2FMFBULzZaKZlPNS2Ra4xClHZAh600tQIiJ4BjHdGCxu1msBwR//uesMU3KRXEPFv2eDLc+mCwhtKph48vUdtxmcj3qciFDOOgBew4cPyI2mCYAPi6tLQ==
+  #- secure: wQyl9u4K+1eRJEPipAKaP5XeBa7VCiSqsEl/zUHlwn/fpHY/q40ixG12Rj+n8g1MrwwI0r/AgMZFEEC2y/IMnzdUYWicLnmy+mWq8TBwZdal7emJhvCpiUXjKhcCMfoU8mCwcJhudy5m7dg5WQ27+fBSgZXjBwB2KltazoMIXjqHUUhlPVRDNVvsxq+l2bftSRwy1gJi1ducW/cFZT5+IJvrMxL2xDRtfmUPPR3JknKaePJIdxEvn0yOq19SWU5y0I4VXCaDdKX9MdAyWqdf6tv/msX4ZvcSLl/itIwiFFt3PkjXVa/gXTPZ3gSQyrchPqjeEkDweAfHGTq9rhN02A==
+  #- secure: Ba9NBwHO7+w6jy85QSV/H2Gt9OIt37RpsCof8fWxJdsl9g53olW+qzS0bhRlFBZlQut+eGuHdEb4o2pwE/S7+IuB0dL9WX1y1RrBB9Ma6FEFfi7pH8eXDnfT600v8vPxBG7qpOd2fD9Cy7jZO4zv1jbWMAZSLxZbet9IQq6cwWHXqixGv3pY9lfyy5RGk2nUVuKFnhQW5cpK2Zu2KDMcsiMfmzBWg6/7WD6BuMpmFqgrvwDKx4MeV9E0jHH842AxVYNkch6wTvHZ2kbO0N002Ig0S4PZk87chHCHZ5D2ftoXwTs4gxHnOf97tsVfAzsy6ydZaXl2Al0JQPGPn3yj1Q==
 # Postgres binds to 127.0.0.1 by default and is started on boot. Default username is "postgres" with no password
 # Create a DB as part of before script to use it
 # Make folders for the reports, and create the SQL db
@@ -22,7 +23,7 @@ before_script:
 
 script:
   - npm test
-  - echo $foo and $name
+  - echo $a
 #addons:
  # postgresql: 9.3
 

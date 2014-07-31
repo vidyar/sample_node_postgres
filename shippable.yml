@@ -22,6 +22,7 @@ before_script:
 script:
   - npm test
   - echo $foo
+  - echo $bar
 #addons:
  # postgresql: 9.3
 

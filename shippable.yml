@@ -8,8 +8,8 @@ env:
  global:
   - XUNIT_FILE=shippable/testresults/result.xml
   - bar= foo
-  #- secure: wQyl9u4K+1eRJEPipAKaP5XeBa7VCiSqsEl/zUHlwn/fpHY/q40ixG12Rj+n8g1MrwwI0r/AgMZFEEC2y/IMnzdUYWicLnmy+mWq8TBwZdal7emJhvCpiUXjKhcCMfoU8mCwcJhudy5m7dg5WQ27+fBSgZXjBwB2KltazoMIXjqHUUhlPVRDNVvsxq+l2bftSRwy1gJi1ducW/cFZT5+IJvrMxL2xDRtfmUPPR3JknKaePJIdxEvn0yOq19SWU5y0I4VXCaDdKX9MdAyWqdf6tv/msX4ZvcSLl/itIwiFFt3PkjXVa/gXTPZ3gSQyrchPqjeEkDweAfHGTq9rhN02A==
-  - secure: ohgsV9k7f+meOcURLpiHAZALs270C0lug94cqqNaLjSNr24QxMdVXDEK/r6umTw5Mvv1UpGqjJ2UdIKqvUwjZVKOHH1aKzRfChV5yaQgdqdp29QVn/285t3oJ+n4S1bcl8cpt3pE160G0NlKqJHduZaBpwHruPXazWVbNhYLX23llgtQ6lNLgUQrR6h2ImNKzglH7G1JCB8xrMfDjKIrUFZFHLoQ41ht+W9k3mgjduehe0yi7sL1KjjNRxUfXDJzr6QHCINoGm8j9PXGG0jjFAmx2075/oRZhZ8vaCxF+p6ry4FKz7I+3PiroJUJiiqXCJUlPSHpviGBsm+zy3BxdQ==
+  - secure: Z5D/802OqZxifvy24uWcRhhi4w0TIIe4840q6k12MmMxoQAh611uNWHIqpAB4GEakW2imA5CS5MhH7J9h23CsmOOy81PNpeT3zjHSvBtYWKJN2s/I+kaUI5j4iQ2tPq++ECdPvkZ6wnU6EcVCp6KHVGWSmZ4nxynOoR5+GFo81H4y6ttZynN3yuUcDnyhQyBPwZYBlNPjnJop1dJyysZ6hkB49nBC6gFLcep4XxhKWY9TwkPm+Fx/vKSdlM5NPsBNf+aCO68+0+hninEhSTYjtpRixS+pNWdyzkaePd+MmyGXdLI4MHxRycPVlTygCKYKy9Mp7SzRQdD7HrQijR9uw==
+  
 # Postgres binds to 127.0.0.1 by default and is started on boot. Default username is "postgres" with no password
 # Create a DB as part of before script to use it
 # Make folders for the reports, and create the SQL db
@@ -21,7 +21,7 @@ before_script:
 
 script:
   - npm test
-  - echo $foo
+  - echo $name
   - echo $bar
 #addons:
  # postgresql: 9.3

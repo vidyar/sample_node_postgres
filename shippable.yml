@@ -8,7 +8,7 @@ env:
  global:
   - XUNIT_FILE=shippable/testresults/result.xml
   #beta
-  
+  - secure: cgI4w6j5wbZ5GMVabKg/YyIb+gqJT6hDAgPIsLMZsiT+jTBhvWDj380oERaFtpv08/8k+j1IwJmjL1AcZ9deHG6PGX4mqV4QwAkNeX2a9jiJKSdUxJIkZ1M+Ok6Usj2qSqoGeMWTji7SM1b1vln623dvWvOV/3c0b6Iniz39lMh3Frsfj+IwlLrRvFOv1MWNmibnTuEN7GNi7On8fKegT2YJvrX3wgYfu66R3na5836bD2dKRIofm4JvoXE4Leu13YwlseUXMsizm3SwSO3Hd6ufovdrVyfTQCEHhG1dyV7AOAOzh/bLyCxI6NxID9lbxuG87kuuU9ArORC81/DpWg==
   
   #Create a DB as part of before script to use it
 # Make folders for the reports, and create the SQL db

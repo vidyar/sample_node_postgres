@@ -9,7 +9,7 @@ env:
   - XUNIT_FILE=shippable/testresults/result.xml
   #beta
   - secure: cgI4w6j5wbZ5GMVabKg/YyIb+gqJT6hDAgPIsLMZsiT+jTBhvWDj380oERaFtpv08/8k+j1IwJmjL1AcZ9deHG6PGX4mqV4QwAkNeX2a9jiJKSdUxJIkZ1M+Ok6Usj2qSqoGeMWTji7SM1b1vln623dvWvOV/3c0b6Iniz39lMh3Frsfj+IwlLrRvFOv1MWNmibnTuEN7GNi7On8fKegT2YJvrX3wgYfu66R3na5836bD2dKRIofm4JvoXE4Leu13YwlseUXMsizm3SwSO3Hd6ufovdrVyfTQCEHhG1dyV7AOAOzh/bLyCxI6NxID9lbxuG87kuuU9ArORC81/DpWg==
-  
+  - secure: etENQQSJLteoBMpsSX7X2NfoIiBJkeEwDO+n+LwkIUUECId2UjSegMKcRaL7EeVmQD1CR2eYzdwUenbnxgTwWD3eSeMFzgyoOzlJbpGZD6FnzmvcLt6N2xZV2uwdyigbi0LnXQH2p5QTQ2cMOIVxMdp2qjM5PkYJuf5EMO6z3xyU+6dA/GtiU1CjRkFORykzGPk1t6/u7GAXW8ZCrYkT6cwkvmesp5AvT/2GrcSwJwCSgoQllZFedwhBQOQNFW54qhO8puBat4QPTBAjQobDHy7cjDQizDUUZKqKF3rN9AVcdqnvFqrLcZqeKmWEV6yiHdnSWJniJZF3L2hHTASFyQ==
   #Create a DB as part of before script to use it
 # Make folders for the reports, and create the SQL db
 before_script:
@@ -23,6 +23,7 @@ before_script:
 script:
   - npm test
   - echo $foo
+  - echo $name
 #addons:
  # postgresql: 9.3
 

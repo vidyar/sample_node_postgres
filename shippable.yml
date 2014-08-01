@@ -7,7 +7,8 @@ node_js:
 env:
  global:
   - XUNIT_FILE=shippable/testresults/result.xml
-  - secure: wQyl9u4K+1eRJEPipAKaP5XeBa7VCiSqsEl/zUHlwn/fpHY/q40ixG12Rj+n8g1MrwwI0r/AgMZFEEC2y/IMnzdUYWicLnmy+mWq8TBwZdal7emJhvCpiUXjKhcCMfoU8mCwcJhudy5m7dg5WQ27+fBSgZXjBwB2KltazoMIXjqHUUhlPVRDNVvsxq+l2bftSRwy1gJi1ducW/cFZT5+IJvrMxL2xDRtfmUPPR3JknKaePJIdxEvn0yOq19SWU5y0I4VXCaDdKX9MdAyWqdf6tv/msX4ZvcSLl/itIwiFFt3PkjXVa/gXTPZ3gSQyrchPqjeEkDweAfHGTq9rhN02A==
+  - secure: DUwQpoPSvgdiL52RpfOJMLSotMgPp33HKVo1f4CLBK4pSPvh/rrYQCCOP6anjxtpgdiU6tq2bem8M0Y9mAIs29sOpJlTlAtTgS2nUEnmmdyS9g3m2pJgrF3irPppldryqQBC2NoET3mg0unF87pnrk1/IJSr4+mWXpJFaAz6Tr91GYcbeTYuwQLKYXHZg1Z9YzisQirLgVu2AdypiZfDdFPNqf5QLBIdxFR+1Xzr6vymNa9ZK1OTV7Ng7/SyBdMfLWZJzIut+tPCGPWQRBf/+YqLESKlu6pWYaHLB6gsY9q5ZndMjeGGgx36nXWx1xrXvoWWrtFq9nIsEb+ma2e8tw==
+  #secure: wQyl9u4K+1eRJEPipAKaP5XeBa7VCiSqsEl/zUHlwn/fpHY/q40ixG12Rj+n8g1MrwwI0r/AgMZFEEC2y/IMnzdUYWicLnmy+mWq8TBwZdal7emJhvCpiUXjKhcCMfoU8mCwcJhudy5m7dg5WQ27+fBSgZXjBwB2KltazoMIXjqHUUhlPVRDNVvsxq+l2bftSRwy1gJi1ducW/cFZT5+IJvrMxL2xDRtfmUPPR3JknKaePJIdxEvn0yOq19SWU5y0I4VXCaDdKX9MdAyWqdf6tv/msX4ZvcSLl/itIwiFFt3PkjXVa/gXTPZ3gSQyrchPqjeEkDweAfHGTq9rhN02A==
 
 # Postgres binds to 127.0.0.1 by default and is started on boot. Default username is "postgres" with no password
 # Create a DB as part of before script to use it
@@ -22,7 +23,7 @@ before_script:
 
 script:
   - npm test
-  - echo $foo
+  - echo $PR
 #addons:
  # postgresql: 9.3
 

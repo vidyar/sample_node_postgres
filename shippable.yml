@@ -33,12 +33,6 @@ after_script:
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --ui=bdd --reporter=xunit-file
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
   
-before_archive:
-  - mv  index.js shippable/src
-  
-after_archive:
-      - echo $SHIPPABLE_ARTIFACTS_URL
-    
 
 addons:
     postgresql : "9.3"

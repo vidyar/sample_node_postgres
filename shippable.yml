@@ -17,7 +17,10 @@ before_script:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/src
   - psql -c 'CREATE DATABASE app_test;' -U postgres
-
+  
+matrix:
+  include:
+    - node_js: 0.11
 script:
   - npm test
   - echo $foo

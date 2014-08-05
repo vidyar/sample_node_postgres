@@ -9,6 +9,7 @@ env:
   - XUNIT_FILE=shippable/testresults/result.xml
   #beta
   - name=vidya
+  - secure: od0/rA2R2IwdpNW+MKe1gD0x5fmvkCqyVlQh57ULM0UpKtHFop6IWcHQuu50JteKzaSZYVzQmvq7g5PcUp6VsvlKwV2AOIhoeLcMMzioDYUioD104O6pTotnH0OQ5T56ARTDextNHSZJFQFONLo5mhJZQFQylRWp4WLF0aJxe9wu9coltXLzx7QAXg6TRzGxPyNNhiyC903Us1zKMNcRxNQzxQ9uwwFE9UilsgwLguMWmi4ZXIl38PptBmc5lwEH8xLWb5eI30Bw0d2g1/m3VWccpN2rE+HyXuDCQ+m+TVfaMak/t8TWNxTsVeJLDo41UJhXgF+Rmv+EZn/lfchwhg==
   - secure: GB4NuqMnlsZK13KSKSsZB8DKorWqdyy0oymEGY6UW1yBZq6j8wt1lsUN++qn/2EpjYbFhyohc5igWP+VKxMa9hBvymOMkMVqxS8Cxtp5pLoqUU9xzj8JY6iA8H7fuDSsncVKXkw03roi1y7jeE53EEiVOoto7c3nfJmhvLtnDYPZDW0kiRRwWZdEcaTgq8cdYWzIZyPL5wDpSNdCuJnPvv34Yk2dHCB15hAA6uAbmFWkgXpFLyOjRBeh5A538CREAW8h9vmLZ6WVBWoTEEP7Vhj8oL9v+9HkFxw4m5Si+DpPLzc4Etfvtiik5W29/mLtVfGJV0ZwNW9qF+PUJQKoNw==
   #- secure: INBb85IGKn1Me5fGjSJPFJnBkrjN8IQYGBtLnRrz1MYFzS7BPWjuJmlDekJvUm8HYJ+hJD/aLNSzvtic1cY4Gyluh00vO+6wtcs8y0BTB/GiEmYiAJY/A+lSogZJA5wJBb3QlN7uSYDfZjmDhLxO6ky3QUeiHG8n8SgS7XGWM/TEhCBx/Q3QejM5/Jjk5XlTwVgN7cs02Ty+P1Hc+dYIYGPIlJhS9ig8+6SQIE62ynQ1MEBy7p7xGtVGYRr7HSR1ihjXTlw9OJAnwslfacC7TOb0HJMNwtcGslaVRVOpKpVlIcltxqR40AkOSO9GaQsweszcMNiHRPIfogdDF6heSA==
   #Create a DB as part of before script to use it
@@ -24,6 +25,7 @@ before_script:
 script:
   - npm test
   - echo $foo
+  - echo $user
   - echo $name
 #addons:
  # postgresql: 9.3

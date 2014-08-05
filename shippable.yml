@@ -3,11 +3,11 @@ language: node_js
 
 node_js:
  - 0.10
- - 0.11
+ - 0.8
   
 matrix:
   exclude:
-    - node_js: 0.11
+    - node_js: 0.8
 
 # For xunit-file module to put results in shippable folder
 env:

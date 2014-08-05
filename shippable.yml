@@ -7,7 +7,7 @@ node_js:
   
 matrix:
   exclude:
-    - node_js:0.11
+    - node_js: 0.11
 
 # For xunit-file module to put results in shippable folder
 env:

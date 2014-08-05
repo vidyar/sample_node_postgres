@@ -23,7 +23,7 @@ describe('Postgres Database', function () {
   });
   it('should save a new name', function (done) {
     db('things')
-      .insert({ name: 'Johnson' })
+      .insert({ name: 'Johns' })
       .exec(function (err) {
         expect(err).to.equal(null);
         done();

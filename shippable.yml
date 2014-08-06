@@ -7,7 +7,8 @@ node_js:
 env:
  global:
   - XUNIT_FILE=shippable/testresults/result.xml
-  - secure: wQyl9u4K+1eRJEPipAKaP5XeBa7VCiSqsEl/zUHlwn/fpHY/q40ixG12Rj+n8g1MrwwI0r/AgMZFEEC2y/IMnzdUYWicLnmy+mWq8TBwZdal7emJhvCpiUXjKhcCMfoU8mCwcJhudy5m7dg5WQ27+fBSgZXjBwB2KltazoMIXjqHUUhlPVRDNVvsxq+l2bftSRwy1gJi1ducW/cFZT5+IJvrMxL2xDRtfmUPPR3JknKaePJIdxEvn0yOq19SWU5y0I4VXCaDdKX9MdAyWqdf6tv/msX4ZvcSLl/itIwiFFt3PkjXVa/gXTPZ3gSQyrchPqjeEkDweAfHGTq9rhN02A==
+  - secure: KrI1bDwXeGdTQtg5XQalGRafa7VO2zZgGuejmpbm6YXYr3BArt9weu0/lTTuUDlWlcHRTfJKHCM0uj6TOQsW0+bdbecs10GN2AidEE3nv8geZH50hZULUdMdcJzAC1k7Xbx28w4kmiGjoBs94UqNuVIIzbRgZS0gLZXYX9RkADI/z7A3sKmifvdlYibLsDhEfYnQRmKkab6jiqEsnzRk5FUP/43l94fDz/YvufSGuBTerxdZlk+mTz17v4mT+dBWVba1cTUZYwfMaV90qaZC8oR/zQ+juBdQk4iDwopT2RZd2BXtvQc7joA9RLvscfouRTpCJeCtk72nK2cHg6eAtQ==
+  
 
 # Postgres binds to 127.0.0.1 by default and is started on boot. Default username is "postgres" with no password
 # Create a DB as part of before script to use it

@@ -12,6 +12,7 @@ matrix:
 env:
  global:
   - XUNIT_FILE=shippable/testresults/result.xml
+  - secure: tSXDtEwFC4y21/DvMIIjuoMB8g0y5LdydWjE/onDFfkWdctEjaDJ2Bo2jQwLjRT/YL6Vs0hfwNUBer3rd9d8Kxjguiu18rBBBmnoYEyrWo5xj5KRb+B3p/HJ7QsK+e4NQ/nUtTOd5mS+e+GQSwny4nJtd0O0zh1tGuMXyR2dZpFiKeaz3if8UTb7NCu2jwTaiWMRW4v4pdJkrDtajRLQdaKO/0RnEREBy0bh6KzMOoFSMBSI2VCB0agCK/xUH+hlNjL/BGvKcg033qIIn0ccmIuivvKGHA9Ft50TchpQaknX62uBxDNg8EunwSXTwSiLfGYEm40tdfk6SAlSLvStqA==
   - secure: Z5D/802OqZxifvy24uWcRhhi4w0TIIe4840q6k12MmMxoQAh611uNWHIqpAB4GEakW2imA5CS5MhH7J9h23CsmOOy81PNpeT3zjHSvBtYWKJN2s/I+kaUI5j4iQ2tPq++ECdPvkZ6wnU6EcVCp6KHVGWSmZ4nxynOoR5+GFo81H4y6ttZynN3yuUcDnyhQyBPwZYBlNPjnJop1dJyysZ6hkB49nBC6gFLcep4XxhKWY9TwkPm+Fx/vKSdlM5NPsBNf+aCO68+0+hninEhSTYjtpRixS+pNWdyzkaePd+MmyGXdLI4MHxRycPVlTygCKYKy9Mp7SzRQdD7HrQijR9uw==
   - secure: PQUWIoau+TXyT19SJZobaOFmRxq38NS0EBlDWdU6mCSaxB5ENTKQ3GIYrwbXcUkkwsP3vg8x246Ny9J+1xYhxyrZPppb+7Jvy0gh25N9MZxtSfkM5aVwYWgmZkhW+2JGxA0pGcIW8jLEjLdCr6eVWQhFhtsAfcMWrCutZ104EOhQM6qvMMmP2avArTxEZ8o5w+HcC0j5Ed1XT0IbC5V33pJgzONpI8cgZOaQp7bgRFI4vzC8gMfa+RnuvwDNiqpV18KKJG4pBSRoVErWqqs0/cUq1wQ4Nrn4yjuHfzZ6UCXk4HffSorQN2MgSBejImNP7C45wsR102D0GCtTZEiQQw==
 # Postgres binds to 127.0.0.1 by default and is started on boot. Default username is "postgres" with no password
@@ -26,7 +27,7 @@ before_script:
 script:
   - npm test
   - echo $name
-  - echo $a
+  - echo $foo
 #addons:
  # postgresql: 9.3
 

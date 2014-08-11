@@ -28,8 +28,7 @@ script:
   - npm test
   - echo $name
   - echo $foo
-#addons:
- # postgresql: 9.3
+
 
 # Generate coverage report with istanbul
 after_script:
@@ -39,6 +38,6 @@ after_script:
   
 
 addons:
-    postgresql : "9.3"
+    postgresql : "9.2"
   
 

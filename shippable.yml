@@ -19,11 +19,12 @@ before_script:
   - mkdir -p shippable/src
   - psql -c 'CREATE DATABASE app_test;' -U postgres
 
+
 script:
   - npm test
   - echo $foo
-#addons:
- # postgresql: 9.3
+addons:
+  postgresql: 9.3
 
 # Generate coverage report with istanbul
 after_script:

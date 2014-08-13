@@ -21,6 +21,7 @@ before_script:
   - mkdir -p shippable/src
   - psql -c 'CREATE DATABASE app_test;' -U postgres
   - echo $foo
+  - echo "release tag 0.24"
 
 
 script:

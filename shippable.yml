@@ -7,7 +7,6 @@ node_js:
 env:
  global:
   - XUNIT_FILE=shippable/testresults/result.xml
-  - secure: KrI1bDwXeGdTQtg5XQalGRafa7VO2zZgGuejmpbm6YXYr3BArt9weu0/lTTuUDlWlcHRTfJKHCM0uj6TOQsW0+bdbecs10GN2AidEE3nv8geZH50hZULUdMdcJzAC1k7Xbx28w4kmiGjoBs94UqNuVIIzbRgZS0gLZXYX9RkADI/z7A3sKmifvdlYibLsDhEfYnQRmKkab6jiqEsnzRk5FUP/43l94fDz/YvufSGuBTerxdZlk+mTz17v4mT+dBWVba1cTUZYwfMaV90qaZC8oR/zQ+juBdQk4iDwopT2RZd2BXtvQc7joA9RLvscfouRTpCJeCtk72nK2cHg6eAtQ==
   
 
 # Postgres binds to 127.0.0.1 by default and is started on boot. Default username is "postgres" with no password
@@ -24,7 +23,7 @@ matrix:
     - node_js: 0.11
 script:
   - npm test
-  - echo $foo
+  
 #addons:
  # postgresql: 9.3
 

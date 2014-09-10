@@ -37,7 +37,7 @@ after_script:
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --ui=bdd --reporter=xunit-file
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
   
-
+commit_container: vidyar/sample_node_postgres
     
 
 addons:

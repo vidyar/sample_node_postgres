@@ -39,7 +39,8 @@ after_script:
   -  cat ~/.gitconfig
   
 commit_container: vidyar/sample_node_postgres
-    
+after_failure:
+ - echo $user
 
 addons:
     postgresql : "9.3"

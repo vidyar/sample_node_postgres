@@ -8,6 +8,7 @@ describe('Postgres Database', function () {
       done();
     }, 1000);
   });
+  
   it('should create a table', function (done) {
     db.schema.hasTable('things').then(function (exists) {
       if (!exists) {
@@ -33,7 +34,7 @@ describe('Postgres Database', function () {
     db('things')
       .select()
       .then(function (docs) {
-        expect(docs[0].name).to.equal('Johnson');
+        expect(docs[0].name).to.equal('Jhnson');
         done();
       });
   });

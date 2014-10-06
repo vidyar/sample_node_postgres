@@ -1,5 +1,5 @@
 
-build_image: shippableimages/ubuntu1204_nodejs
+#build_image: shippableimages/ubuntu1204_nodejs
 
 language: node_js
 
@@ -41,7 +41,7 @@ after_script:
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
   -  cat ~/.gitconfig
   
-#commit_container: vidyar/sample_node_postgres
+commit_container: vidyar/sample_node_postgres
 after_failure:
  - echo $user
 

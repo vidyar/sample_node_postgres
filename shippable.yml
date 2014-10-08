@@ -10,9 +10,6 @@ env:
   - XUNIT_FILE=shippable/testresults/result.xml
   #beta
   
-  - name=vidya
-  - secure: EESpEzi6YSbdi+kiYyN/GlJnKbluhFiL5eUbHSqI9EX+Y9IKJRt0rmRm9EN8t8AsIyZ71X4gVgDYaZIVok4xWvgwD844as9xPMWKFOBAPXXqT1k+Apzx1rxvXtjkyMe+ROmpbsK+GCol59k5EXBZNpM8NVMuplGuQ+dR3O/XRYeVBDAcl3mta+CctQCw5XgKPE0XfipqK0Y7HExxjNYsrnNzsjdUUhNrG73U8dfMlJVqz+ZqAr15q4yEJ2OGXad/WaUir8+2ROclWWG4wsjhTtNeXc8gdNUElJovV1Wtn063dBTsraEdJut3eLZxaE7HHi6OHR5niRTs3lXQ0QLoCA==
-  #- secure: INBb85IGKn1Me5fGjSJPFJnBkrjN8IQYGBtLnRrz1MYFzS7BPWjuJmlDekJvUm8HYJ+hJD/aLNSzvtic1cY4Gyluh00vO+6wtcs8y0BTB/GiEmYiAJY/A+lSogZJA5wJBb3QlN7uSYDfZjmDhLxO6ky3QUeiHG8n8SgS7XGWM/TEhCBx/Q3QejM5/Jjk5XlTwVgN7cs02Ty+P1Hc+dYIYGPIlJhS9ig8+6SQIE62ynQ1MEBy7p7xGtVGYRr7HSR1ihjXTlw9OJAnwslfacC7TOb0HJMNwtcGslaVRVOpKpVlIcltxqR40AkOSO9GaQsweszcMNiHRPIfogdDF6heSA==
   #Create a DB as part of before script to use it
 # Make folders for the reports, and create the SQL db
 before_script:
@@ -21,14 +18,12 @@ before_script:
   - mkdir -p shippable/src
   - psql -c 'CREATE DATABASE app_test;' -U postgres
   - echo $foo
-  - echo "release tag 0.24"
+ 
 
 
 script:
   - npm test
-  - echo $foo
-  - echo $user
-  - echo $name
+  
 #addons:
  # postgresql: 9.3
 

@@ -16,6 +16,7 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/src
+  - psql -c 'DROP DATABASE IF EXISTS app_test ;' -U postgres -w
   - psql -c 'CREATE DATABASE app_test;' -U postgres
   - echo $foo
  

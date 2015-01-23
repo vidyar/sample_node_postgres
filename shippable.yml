@@ -7,6 +7,7 @@ node_js:
 env:
  global:
   - XUNIT_FILE=shippable/testresults/result.xml
+  - secure: Z5T3HsgnoI0QdMT5EhaDq/tgkn00Op1ujt9lH4Poa0cb6XC86ek66eUkGu0TUqjzTy/Y6rt1pe77KKOWNKGDFyJtblPH3A42ibtt0Am4R93NoSXrg/9Y5Ivc2QYawv4mjalA5fWYw7FjTxq1b8cvc/ktCiyyw37dd7XlLhUw7xBcjgwcApoMvPoo7Uzdwc0+uaY9F0cLSbvqyvNS5S88EGkgw0RHhTlZ2KWen5BONTNV+FXTMhVbhp6YG8Y6M6V4a4veBFjnHZaAUgTryRFJhDMQ8vk7dGKap+ALrvgSFJ694c4O9c5Gk35XosZa+lgPNST1jEpCbHcv+olU4yCvsA==
   #beta
   
   #Create a DB as part of before script to use it
@@ -17,7 +18,7 @@ before_script:
   - mkdir -p shippable/src
   - psql -c 'DROP DATABASE IF EXISTS app_test ;' -U postgres -w
   - psql -c 'CREATE DATABASE app_test;' -U postgres
-  - echo $foo
+  - echo $test
  
 script:
   - npm test

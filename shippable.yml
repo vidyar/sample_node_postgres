@@ -19,12 +19,13 @@ before_script:
   - psql -c 'DROP DATABASE IF EXISTS app_test ;' -U postgres -w
   - psql -c 'CREATE DATABASE app_test;' -U postgres
   - echo $test
+
  
 script:
   - npm test
   
-#addons:
- # postgresql: 9.3
+addons:
+  postgresql: 9.3
 
 # Generate coverage report with istanbul
 after_script:
@@ -33,7 +34,7 @@ after_script:
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
   
 
-cache: true   
+#cache: true   
 
 addons:
     postgresql : "9.3"

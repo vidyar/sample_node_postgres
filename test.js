@@ -23,7 +23,7 @@ describe('Postgres Database', function () {
   });
   it('should save a new name', function (done) {
     db('things')
-      .insert({ name: 'Johnso' })
+      .insert({ name: 'Johnson' })
       .exec(function (err) {
         expect(err).to.equal(null);
         done();
@@ -33,7 +33,7 @@ describe('Postgres Database', function () {
     db('things')
       .select()
       .then(function (docs) {
-        expect(docs[0].name).to.equal('Johnso'); #n
+        expect(docs[0].name).to.equal('Johnson'); #n
         done();
       });
   });

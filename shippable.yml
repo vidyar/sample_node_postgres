@@ -46,6 +46,6 @@ after_failure:
  - echo $user
 
 addons:
-    postgresql : "9.3"
+    postgresql : "9.2"
   
 
